@@ -198,67 +198,135 @@ header nav ul li a:hover {
 .galeria1 {
   position: absolute;
   top: 20%;
-  left: 14%;
+  left: 10%;
 }
 
 .galeria1 img {
   width: 40%;
   height: auto;
+  border: 3px solid white;
+  padding: 10px;
 }
 
 .galeria2 {
   position: absolute;
-  top: 60%;
-  left: 7%;
+  top: 55%;
+  left: 10%;
 }
 
 .galeria2 img {
   width: 50%;
   height: auto;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 .galeria3 {
   position: absolute;
   top: 20%;
-  left: 41%;
+  left: 37%;
 }
 
 .galeria3 img {
   width: 50%;
   height: auto;
+  border: 3px solid cornflowerblue;
+  padding: 10px;
 }
 
 .galeria4 {
   position: absolute;
-  top: 55%;
-  left: 35%;
+  top: 57%;
+  left: 40%;
 }
 
 .galeria4 img {
   width: 55%;
   height: auto;
+  border: 3px solid yellow;
+  padding: 10px;
 }
 
 .galeria5 {
   position: absolute;
   top: 20%;
-  left: 75%;
+  left: 70%;
 }
 
 .galeria5 img {
-  width: 50%;
+  width: 60%;
   height: auto;
+  border: 3px solid rgb(112, 218, 147);
+  padding: 10px;
 }
 
 .galeria6 {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 70%;
-
 }
 
 .galeria6 img {
   width: 70%;
   height: auto;
+  border: 3px solid orchid;
+  padding: 10px;
 }
 
+/*CARTA*/
+
+.catalogo {
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  font-family: monospace;
+  font-size: larger;
+  color: chocolate;
+  letter-spacing: 10px;
+  position: relative;
+}
+
+.catalogo::before,
+.catalogo::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10%;
+  height: 1px;
+  background-color: chocolate;
+}
+
+.catalogo::before {
+  right: 35%;
+}
+
+.catalogo::after {
+  left: 34%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.menu ul li a:hover {
+  background-color: chocolate;
+  color: black;
+  border-radius: 1rem;
+}
