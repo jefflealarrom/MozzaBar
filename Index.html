@@ -12,283 +12,496 @@
 <body>
 
     <!---HEADER-->
-
     <header>
         <div class="logo">
-            <a href="https://www.ejemplo.com">
-                <img src="Imagenes/Mozza-Bar-Logo.png" alt="Logo">
-            </a>
+            <img src="Imagenes/Mozza-Bar-Logo.png" alt="Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Concepto</a></li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li><a href="#">Concepto</a>
+
+                    <ul>
+                        <li><a href="#">Subconcepto 1</a></li>
+                        <li><a href="#">Subconcepto 2</a></li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="#">Fotos</a>
+                    <ul>
+                        <li><a href="#">Galería 1</a></li>
+                        <li><a href="#">Galería 2</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Menu</a>
+                    <ul>
+                        <li><a href="#">Entradas</a></li>
+                        <li><a href="#">Platos principales</a></li>
+                        <li><a href="#">Postres</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Reservas</a>
+                    <ul>
+                        <li><a href="#">Cómo reservar</a></li>
+                        <li><a href="#">Políticas de reserva</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                    <ul>
+                        <li><a href="#">Últimas entradas</a></li>
+                        <li><a href="#">Categorías</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Contacto</a>
+                    <ul>
+                        <li><a href="#">Información de contacto</a></li>
+                        <li><a href="#">Formulario de contacto</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <!--recordar: estudiar como hacer el menu de navegacion responsive para pantallas moviles-->
+
     <!--COVER-->
 
     <main>
-        <article class="foto-restaurante">
-            <img src="Imagenes/osteria_mozza_singapore.jpg" alt="Foto de restaurante">
-            <div class="texto">
-                <h2>Welcome</h2>
-                <h1> <span class="mozza">MOZZA</span> BAR</h1>
-                <h3>We're open</h3>
-            </div>
-        </article>
+
+        <section class="backgroud-1"> <!--Todos los background-1 llevaral los mismos estilos-->
+
+            <h2>welcome</h2>
+            <h1> <span class="mozza">mozza</span> bar</h1> <!--mozza ira en otro color-->
+            <h3>we're open</h3>
+
+        </section>
 
         <!--INFO-->
 
-        <article class="foto-plantas">
-            <img src="Imagenes/imagen-plantas.jpg" alt="imagen de plantas">
-            <div class="texto-concepto">
-                <h2 class="texto-h2">CONCEPTO</h2>
+        <section class="background-2">
+
+            <div class="box">
+
+                <h2>concepto</h2>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi aliquam consectetur nesciunt est
                     repellendus, facere rerum doloremque nemo minus, voluptate ipsam voluptatum esse possimus
-                    quisquam ab fugit quaerat facilis magni.</p>
+                    quisquam ab fugit quaerat facilis magni.
+                </p>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quos. Vero impedit iusto
                     magnam. Sed minus facilis consectetur, mollitia magni, repudiandae corrupti corporis architecto
-                    commodi voluptates inventore soluta molestias odit.</p>
-            </div>
-            <div class="border-left">
-                <img src="Imagenes/TazaDeCafe.png" alt="Taza de cafe">
+                    commodi voluptates inventore soluta molestias odit.
+                </p>
+
+                <img src="Imagenes/TazaDeCafe.png" alt="" class="imagen-1">
+                <img src="Imagenes/pizza.png" alt="" class="imagen-2">
 
             </div>
-            <div class="border-right">
-                <img src="Imagenes/pizza.png" alt="">
 
-            </div>
-        </article>
+
+        </section>
+
 
         <!--GRID-->
 
-        <article class="grid-fondo">
-            <img src="Imagenes/galeria.jpg" alt="grid">
+        <section class="background-grid">
 
-            <div class="galeria1">
-                <img src="Imagenes/gatoLenguaAfuera.jpg" alt="Gato negro">
-            </div>
-            <div class="galeria2">
-                <img src="Imagenes/gatoheterocromia.jpg" alt="Gato asombrado">
-            </div>
-            <div class="galeria3">
-                <img src="Imagenes/gatoFondoNaranja.jpg" alt="gato gris">
-            </div>
-            <div class="galeria4">
-                <img src="Imagenes/GatoGafas.jpg" alt="gato gafas">
-            </div>
-            <div class="galeria5">
-                <img src="Imagenes/gatoasombrado.jpg" alt="Gato con ojos de dos colores">
-            </div>
-            <div class="galeria6">
-                <img src="Imagenes/gatogris.jpg" alt="Gato con fondo naranja">
-            </div>
-        </article>
+            <article class="grid">
+
+
+                <div class="item-grid">
+                    <img src="Imagenes/gatoasombrado.jpg" alt="descripcion">
+                </div>
+
+                <div class="item-grid">
+                    <img src="Imagenes/gatoFondoNaranja.jpg" alt="descripcion">
+                </div>
+
+                <div class="item-grid">
+                    <img src="Imagenes/gatogris.jpg" alt="descripcion">
+                </div>
+
+                <div class="item-grid">
+                    <img src="Imagenes/gatoheterocromia.jpg" alt="descripcion">
+                </div>
+
+                <div class="item-grid">
+                    <img src="Imagenes/gatoLenguaAfuera.jpg" alt="descripcion">
+                </div>
+
+                <div class="item-grid">
+                    <img src="Imagenes/GatoGafas.jpg" alt="descripcion">
+                </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
 
         <!--CARTA-->
 
         <section>
-            <h3 class="catalogo">CARTA</h3>
 
-            <div class="menu">
+            <h3 class="catalogo">Carta</h3>
+            <article class="menu">
+
                 <ul>
-                    <li><a href="#desayuno">Desayuno</a></li>
-                    <li><a href="#carta">Carta</a></li>
-                    <li><a href="#cocktails">Cocktails</a></li>
+                    <li><a href="#">Desayuno</a></li>
+                    <li><a href="#">Carta</a></li>
+                    <li><a href="#">Cocktails</a></li>
+                </ul>
+            </article>
+
+        </section>
+
+
+        <section class="background-3">
+            <!--Background de menú, será mas height que el background-1, ocupara el necesatio de la tabla-->
+
+            <div class="back-menu">
+
+                <h2>Título Izquierdo</h2>
+
+                <table class="tabla-productos">
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+
+                </table>
+
+
+
+
+            </div>
+
+            <div class="back-menu">
+
+                <h2>Título derecho</h2>
+
+                <table class="tabla-productos">
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td class="precio">10</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td class="precio">10</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+        </section>
+
+        <div class="contenedor">
+            <input type="button" class="boton" value="Ver la carta de desayunos">
+        </div>
+
+
+        <!--FORMULARIO DE CONTACTO RESERVAS-->
+
+        <article class="background-4">
+
+            <div class="reserva">
+                <h2>reservas</h2>
+            </div>
+
+            <form action="#" method="#">
+
+                <fieldset>
+
+                    <legend>Detalles de la Reserva</legend>
+
+                    <label for="cantidadPersonas">Número de personas:</label>
+                    <select id="cantidadPersonas" name="cantidadPersonas">
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                    </select>
+
+                    <label for="horaReserva">Hora:</label>
+                    <select id="horaReserva" name="horaReserva">
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                    </select>
+
+                    <label for="tipoMesa">Tipo de Mesa:</label>
+                    <select id="tipoMesa" name="tipoMesa">
+                        <option value="normal">Normal</option>
+                        <option value="VIP">VIP</option>
+                    </select>
+
+                </fieldset>
+
+                <button type="submit">Reservar</button>
+
+                <p>Si no encuentra disponibilidad, apúntese a la lista de espera.</p>
+                <button class="form-buttom"><a href="">Lista de Espera</a></button>
+                <button class="form-buttom"><a href="">Solicitud de Grupo</a></button>
+
+            </form>
+
+
+            <div class="info-reserva">
+            <h2>Mozzabar Food & Drinks</h2>
+            <p>Calle Conde Peñalver 64, 28006 - Madrid</p>
+            <p>>Abierto de lunes a domingo de 7:30 a 1:30</p>
+            </div>
+
+        </article>
+
+
+
+        <!-- BLOG-->
+
+        <section>
+
+            <article class="blog-title">
+                <h2>blog</h2>
+            </article>
+
+
+            <article class="grid-blog">
+
+                <h2>Nombre del artículo 1</h2>
+                <p>Texto del artículo 1</p>
+
+                <footer>
+                    <p>Escrito por: <span>Administrador</span> &#x1F60A;</p>
+                    <p><span>&#x1F4AC;</span> Comentarios</p>
+                    <p><span>&#x2764;</span> Me gusta</p>
+                </footer>
+
+            </article>
+
+
+            <!-- esto tiene que ir dos veces mas para mostrar el grid de tres -->
+
+            <button><a href="#">Ver todas las entradas</a></button>
+
+        </section>
+
+
+        <!--INFORMACION DE CONTACTO-->
+
+
+        <article class="backgroud-1">
+
+            <div>
+                <img src="URL_logo" alt="logo">
+                <h2>Ven cuando quieras</h2>
+            </div>
+
+            <div>
+                <img src="#" alt="imagen mapa">
+                <p>C/Conde de Peñalver 64, 28006 - Madrid</p>
+            </div>
+
+            <a href="tel:+34910258327">
+                <img src="URL_imagen_telefono" alt="imagen telefono">
+                <p>910 258 327</p>
+            </a>
+
+            <a href="mailto:hola@mozzabar.es">
+                <img src="URL_imagen_sobre" alt="imagen sobre">
+                <p>hola@mozzabar.es</p>
+            </a>
+
+        </article>
+
+
+
+
+        <!--REDES SOCIALES-->
+
+
+        <article class="">
+
+            <h2 class="">siguenos</h2>
+
+
+            <div>
+                <button><a href="">facebook</a></button>
+                <button><a href="">Instagram</a></button>
+            </div>
+
+
+        </article>
+
+        <footer>
+
+            <div>
+                <h3>Enlaces de Interés</h3>
+                <ul>
+                    <li><a href="">Aviso Legal</a></li>
+                    <li><a href="">Cookies</a></li>
                 </ul>
             </div>
 
-            <div class="fondo-carta">
-                <div class="rectangulo izquierdo">
-                    <h2>Título Izquierdo</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto 1</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 2</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 3</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-                    <h2>Título Izquierdo</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto 1</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 2</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 3</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-                    <h2>Título Izquierdo</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto 1</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 2</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 3</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-                    <h2>Título Izquierdo</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto 1</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 2</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 3</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-                    <h2>Título Izquierdo</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto 1</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 2</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto 3</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-
-                </div>
-                <img src="Imagenes/FondoMenujpg.jpg" alt="fondo para el menu">
-                <div class="rectangulo derecho">
-                    <h2>Título Derecho</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto A</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto B</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto C</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-                    <h2>Título Derecho</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto A</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto B</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto C</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-                    <h2>Título Derecho</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto A</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto B</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto C</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-                    <h2>Título Derecho</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto A</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto B</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto C</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-                    <h2>Título Derecho</h2>
-                    <table class="tabla-productos">
-                        <tr>
-                            <td>Producto A</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto B</td>
-                            <td class="precio">10</td>
-                        </tr>
-                        <tr>
-                            <td>Producto C</td>
-                            <td class="precio">10</td>
-                        </tr>
-
-                    </table>
-
-
-                </div>
+            <div>
+                <h3>Horarios</h3>
+                <ul>
+                    <li>Lunes a Domingo</li>
+                    <li>07:30 - 01:30</li>
+                </ul>
             </div>
 
-            <div class="contenedor">
-                <input type="button" class="boton" value="Ver la carta de desayunos">
+            <div>
+                <h2>Contacto</h2>
+                <ul>
+                    <li>C/Conde de Peñalver 64</li>
+                    <li>28006 - Madrid</li>
+                </ul>
+                <ul>
+                    <li>910 258 327</li>
+                    <li>hola@mozzabar.es</li>
+                </ul>
             </div>
-        </section>
 
+            <div>
+                <h6>2017. Todos los derechos reservados</h6> <!--tambien podria usarse la etiqueta <small>-->
+            </div>
+
+            <div class="redes-sociales">
+                <a href="enlace_facebook" title="Facebook">
+                    <span>&#x1F4F1;</span>
+                </a>
+                <a href="enlace_twitter" title="Twitter">
+                    <span>&#x1F426;</span>
+                </a>
+                <a href="enlace_instagram" title="Instagram">
+                    <span>&#x1F4F7;</span>
+                </a>
+            </div>
+
+        </footer>
 
     </main>
 

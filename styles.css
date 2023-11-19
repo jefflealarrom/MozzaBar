@@ -1,287 +1,181 @@
+/*Styles web*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-weight: lighter;
+}
+
 /* Header Styles*/
 
 header {
   display: flex;
   align-items: center;
   background-color: black;
-  color: white;
-  padding: 1rem 5rem;
-  height: 3rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-header .logo img {
-  width: 9rem;
-  height: auto;
-}
-
-header nav {
-  margin-left: auto;
-}
-
-header nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-header nav ul li a {
-  margin-left: 1rem;
-  padding: 5px 10px;
-  text-decoration: none;
+  width: 100vw;
+  height: 10vh;
   color: bisque;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-around;
 }
 
-header nav ul li a:hover {
-  background-color: chocolate;
-  color: black;
-  border-radius: 1rem;
+.logo img {
+  max-height: 60px;
 }
 
-/* COVER*/
-
-.foto-restaurante {
-  position: relative;
+nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  margin: auto;
-  overflow: hidden;
-  max-width: 100%;
+  flex-wrap: wrap;
+  color: bisque;
 }
 
-.texto {
+nav li {
+  margin: 20px;
+  position: relative;
+}
+
+
+nav ul ul {
+  display: none;
   position: absolute;
-  width: 100%;
-  height: 135%;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: chocolate;
+  padding: 10px;
+}
+
+nav ul li:hover>ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.backgroud-1 {
+  width: 100vw;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/osteria_mozza_singapore.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.backgroud-1 h2,
+.backgroud-1 h1,
+.backgroud-1 h3 {
   color: white;
+  padding-bottom: 30px;
 }
 
-.texto h2 {
-  margin: 0.5rem;
-  font-size: 2.5rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.backgroud-1 h1 {
+  text-transform: uppercase;
+  font-size: 10em;
+
 }
 
-.texto h1 .mozza {
+.backgroud-1 .mozza {
   color: chocolate;
 }
 
-.texto h1 {
-  margin: 0.5rem;
-  font-size: 5rem;
-  font-family: "Dancing Script";
-}
-.texto h3 {
-  margin: 0.5rem;
-  font-size: 1.75rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.backgroud-1 h2,
+.backgroud-1 h3 {
+  font-size: 3em;
+  text-transform: capitalize;
+  font-style: italic;
 }
 
-/* INFO*/
+/*COVER*/
 
-.foto-plantas {
+.background-2 {
   position: relative;
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(Imagenes/imagen-plantas.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.foto-plantas img {
-  position: relative;
-  display: block;
-  height: 690px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.texto-concepto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: justify;
-  background-color: black;
-  opacity: 0.9;
+.background-2 .box {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 25px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.texto-h2 {
-  text-align: center;
-  color: chocolate;
-  position: relative;
-  letter-spacing: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.background-2 h2,
+.background-2 p {
+  color: white;
+  padding: 0 10%;
 }
 
-.texto-h2::before,
-.texto-h2::after {
-  content: "";
+.background-2 h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.imagen-1,
+.imagen-2 {
   position: absolute;
-  top: 50%;
-  width: 100px;
-  height: 1px;
-  background-color: chocolate;
-}
-
-.texto-h2::before {
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.texto-h2::after {
-  right: 0;
-  transform: translateY(-50%);
-}
-
-.border-left {
-  position: absolute;
-  top: 10%;
-  left: 20%;
-}
-
-.border-left img {
-  width: 50%;
-  height: auto;
-}
-.border-right {
-  position: absolute;
-  top: 400px;
-  left: 900px;
-}
-.border-right img {
-  height: 200px;
   width: 200px;
-  transform: rotate(-75deg);
+  height: auto;
 }
 
-/* GRID */
+.imagen-1 {
+  top: 15%;
+  right: 68%;
+}
 
-.grid-fondo {
-  position: relative;
+.imagen-2 {
+  bottom: 15%;
+  left: 68%;
+  transform: rotate(160deg);
+}
+
+/*GRID*/
+
+.background-grid {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(Imagenes/galeria.jpg);
+  background-size: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 200px;
+}
+
+.item-grid img {
   width: 100%;
-  height: 50vw;
-  overflow: hidden;
-}
-
-.grid-fondo img {
-  width: 100%;
   height: auto;
-}
-
-.grid-fondo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.3;
-}
-
-.galeria1 {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-}
-
-.galeria1 img {
-  width: 40%;
-  height: auto;
-  border: 3px solid white;
+  border: 1px solid chocolate;
+  transition: transform 0.3s ease;
   padding: 10px;
 }
 
-.galeria2 {
-  position: absolute;
-  top: 55%;
-  left: 10%;
-}
-
-.galeria2 img {
-  width: 50%;
-  height: auto;
-  border: 3px solid green;
-  padding: 10px;
-}
-
-.galeria3 {
-  position: absolute;
-  top: 20%;
-  left: 37%;
-}
-
-.galeria3 img {
-  width: 50%;
-  height: auto;
-  border: 3px solid cornflowerblue;
-  padding: 10px;
-}
-
-.galeria4 {
-  position: absolute;
-  top: 57%;
-  left: 40%;
-}
-
-.galeria4 img {
-  width: 55%;
-  height: auto;
-  border: 3px solid yellow;
-  padding: 10px;
-}
-
-.galeria5 {
-  position: absolute;
-  top: 20%;
-  left: 70%;
-}
-
-.galeria5 img {
-  width: 60%;
-  height: auto;
-  border: 3px solid rgb(112, 218, 147);
-  padding: 10px;
-}
-
-.galeria6 {
-  position: absolute;
-  top: 55%;
-  left: 70%;
-}
-
-.galeria6 img {
-  width: 70%;
-  height: auto;
-  border: 3px solid orchid;
-  padding: 10px;
+.item-grid:hover img {
+  transform: scale(1.3);
 }
 
 /*CARTA*/
 
 .catalogo {
-  padding: 10px;
   text-align: center;
-  font-family: monospace;
-  font-size: larger;
-  color: chocolate;
-  letter-spacing: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -289,120 +183,208 @@ header nav ul li a:hover {
 .catalogo::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 75%;
   width: 10%;
-  height: 1px;
-  background-color: chocolate;
+  border-bottom: 1px solid #000;
+
 }
 
 .catalogo::before {
-  right: 35%;
+  right: 55%;
 }
 
 .catalogo::after {
-  left: 34%;
+  left: 55%;
 }
+
 
 .menu {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
-.menu ul {
+ul {
   display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
-.menu ul li {
+li {
   margin-right: 20px;
 }
 
-.menu ul li a {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: black;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+a:hover {
+  color: chocolate;
+}
+
+.background-3 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(Imagenes/FondoMenujpg.jpg);
+}
+
+.back-menu {
+  width: 40%;
+  box-sizing: border-box;
+  margin: 5%;
+  padding: 20px;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+}
+
+.back-menu:nth-child(2) {
+  float: right;
+}
+
+.back-menu h2 {
   text-align: center;
-}
-
-.menu ul li a:hover {
-  background-color: chocolate;
-  color: black;
-  border-radius: 1rem;
-}
-
-.fondo-carta {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.fondo-carta img {
-  padding-top: 20px;
-  width: 100%;
-  height: auto;
-}
-
-.rectangulo {
-  position: absolute;
-  top: 100px;
-  bottom: 50px;
-  width: 500px;
-  background-color: white;
-}
-
-.izquierdo {
-  left: 150px;
-}
-
-.derecho {
-  right: 150px;
-}
-
-h2 {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tabla-productos {
   width: 100%;
 }
 
-.tabla-productos td {
-  padding: 25px;
-  text-align: left;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.tabla-productos tr td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
 }
 
-.tabla-productos .precio {
+.tabla-productos td.precio {
   text-align: right;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contenedor {
-  padding: 15px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .boton {
-  padding: 15px 30px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: black;
   background-color: white;
-  border: 2px solid black;
+  padding: 15px 30px;
+  border: 1px solid chocolate;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  font-size: 18px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .boton:hover {
   background-color: chocolate;
+  border: 1px solid black;
 }
+
+/*FORMULARIO*/
+
+.background-4 {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(Imagenes/FondoGrid.jpg);
+  background-size: cover;
+
+}
+
+.reserva {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  padding-top: 50px;
+  font-size: 30px;
+  color: white;
+ 
+}
+
+.reserva::before,
+.reserva::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  width: 15%;
+  border-bottom: 2px solid #ffffff;
+}
+
+.reserva::before {
+  right: 60%;
+}
+
+.reserva::after {
+  left: 60%;
+}
+
+form,
+.info-reserva {
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+form {
+  float: left;
+  padding-left: 100px;
+  color: chocolate;
+  padding-top: 150px;
+}
+
+.info-reserva {
+  padding-top: 200px;
+  float: right;
+  color: white;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+ display: none;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border:none; 
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: chocolate;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+p {
+  padding: 20px;
+}
+
+h2 {
+  color: chocolate;
+}
+
+p {
+  font-style: italic;
+}
+
